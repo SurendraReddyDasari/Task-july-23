@@ -14,11 +14,8 @@ variable "location" {
   type        = string
 }
 
-locals {
-  service_plan_id = "/subscriptions/ece13a58-9c87-477d-846f-e1d50515d213/resourceGroups/${var.rg_name}/providers/Microsoft.Web/serverfarms/${var.asp_name}"
-}
 
-variable "app_service_plan_id" {
+variable "service_plan_id" {
   description = "(Required) Specifies the name of the Function App. Changing this forces a new resource to be created. Limit the function name to 32 characters to avoid naming collisions. For more information about Function App naming rule"
   type = string
   default = ""
