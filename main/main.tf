@@ -22,6 +22,7 @@ module "web_app" {
   rg_name                       = var.rg_name
   location                      = var.location
   asp_name                      = var.asp_name
+  app_service_plan_id           = module.app_service_plan.app_service_id
   linux_fx_version              = "DOCKER|${var.docker_image}"
 
   app_settings = {
