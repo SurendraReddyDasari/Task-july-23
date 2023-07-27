@@ -35,7 +35,7 @@ module "web_app" {
 }
 
 resource "azurerm_service_plan" "azurerm_linux_web_app" {
-  name                = "jenkinsdockerts227"
+  name                = var.container_name
   resource_group_name = var.rg_name
   location            = var.location
   os_type             = "Linux"

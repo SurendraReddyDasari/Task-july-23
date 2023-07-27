@@ -21,3 +21,8 @@ variable "webapp_name" {
 variable "docker_image" {
   default = "jenkins/jenkins:lts"
 }
+
+variable "container_name" {
+  default = "container-ts-227"
+  description = ""
+}
